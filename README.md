@@ -1,2 +1,2 @@
 # TourBolivia
-Mostrar un poco de cada departamento de Bolivia,
+Mostrar un poco de cada departamento de Bolivia.
