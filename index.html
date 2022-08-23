@@ -343,15 +343,9 @@
     <section class="main-container" id="Departamentos">
       <div>
         <div class="svg-shape">
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#1D1D1D" fill-opacity="1" d="M0,256L360,256L720,62L1080,256L1440,256L1440,0L1080,0L720,0L360,0L0,0Z"></path>
-          </svg> -->
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#1D1D1D" fill-opacity="1" d="M0,96L0,224L480,224L480,96L960,96L960,224L1440,224L1440,0L960,0L960,0L480,0L480,0L0,0L0,0Z"></path>
-          </svg> -->
+          
           <div class="main-header" >
           
-            <!-- <img src="assets/img/escudo_bolivia.png" alt="escudo_bolivia.png"> -->
             <h3>DEPARTAMENTOS DE BOLIVIA</h3>
           </div>
         </div>
@@ -403,8 +397,6 @@
             <p>La ciudad fue fundada el de 4 julio en 1574.</p>
            </div>
         </div>
-        
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1D1D1D" fill-opacity="1" d="M0,256L720,96L1440,256L1440,0L720,0L0,0Z"></path></svg> -->
       </div>
     </section>
     
@@ -904,9 +896,7 @@
         </div>
       </div>
     </section>
-    <footer >
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium praesentium architecto, obcaecati voluptatum dolores consequatur sapiente ea magnam saepe? Magnam, temporibus facere?</div>
-    </footer>
+
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script>
    $(document).ready(function(){
@@ -938,21 +928,13 @@
             });
 
             function onScrollHandle() {
-                //Navbar shrink when scroll down
-                // $(".navbar-default").toggleClass("navbar-shrink", $(this).scrollTop() > 50);
-
-                //Get current scroll position
                 var currentScrollPos = $(document).scrollTop();
 
-                //Iterate through all node
                 $('.nav-main-navbar > ul > li > a').each(function () {
                     var curLink = $(this);
                     var refElem = $(curLink.attr('href'));
-                    //Compare the value of current position and the every section position in each scroll
                     if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
-                        //Remove class active in all nav
                         $('.nav-main-navbar > ul > li > a').removeClass("a-active");
-                        //Add class active
                         curLink.parent().addClass("a-active");
                     }
                     else {
@@ -969,9 +951,6 @@
         max: 25,
         speed: 400
       });
-      
-      // //It also supports NodeList
-      // VanillaTilt.init(document.querySelectorAll(".your-element"));
     </script>
   </body>
 </html>
