@@ -217,7 +217,6 @@ document.addEventListener("DOMContentLoaded", () => {
     docElem = doc.documentElement,
     body = doc.getElementsByTagName('body')[0],
     x = win.innerWidth || docElem.clientWidth || body.clientWidth;
-    console.log("width: " + x);
     if(x>550){
       if (titleDisplacement === 0 && direction === "prev") {
         titleDisplacement = -90;
